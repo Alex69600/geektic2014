@@ -1,0 +1,19 @@
+INSERT INTO "PUBLIC"."GEEK"
+( "IDGEEK", "NOM", "PRENOM", "AGE", "COURRIEL", "NUMCENTREINTERET" )
+VALUES (1 , 'MIRABEL', 'Alexandre',24 , 'Allo@hotmail.com',1 )
+
+INSERT INTO "PUBLIC"."GEEK"
+( "IDGEEK", "NOM", "PRENOM", "AGE", "COURRIEL", "NUMCENTREINTERET" )
+VALUES (2 , 'JAEGER', 'Mickael',22 , 'Allo2@hotmail.com',2)
+
+INSERT INTO "PUBLIC"."GEEK"
+( "IDGEEK", "NOM", "PRENOM", "AGE", "COURRIEL", "NUMCENTREINTERET" )
+VALUES (3 , 'LANDRIEU', 'Alexis',20 , 'Allo3@hotmail.com',3 )
+
+INSERT INTO "PUBLIC"."GEEK"
+( "IDGEEK", "NOM", "PRENOM", "AGE", "COURRIEL", "NUMCENTREINTERET" )
+VALUES (4 , 'PERRET', 'Thomas',24 , 'Allo4@hotmail.com',4 )
+
+INSERT INTO "PUBLIC"."GEEK"
+( "IDGEEK", "NOM", "PRENOM", "AGE", "COURRIEL", "NUMCENTREINTERET" )
+VALUES (5 , 'MIRABEL', 'Adrien',24 , 'Allo5@hotmail.com',5 )
