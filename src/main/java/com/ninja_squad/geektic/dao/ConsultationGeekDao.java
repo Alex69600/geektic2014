@@ -1,5 +1,6 @@
-package com.ninja_squad.geektic.modele;
+package com.ninja_squad.geektic.dao;
 
-public class ConsultationGeekDAO {
+
+public class ConsultationGeekDao {
 
 }

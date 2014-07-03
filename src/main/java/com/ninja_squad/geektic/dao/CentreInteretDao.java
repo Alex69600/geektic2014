@@ -1,9 +1,16 @@
-package com.ninja_squad.geektic.modele;
+package com.ninja_squad.geektic.dao;
 
 import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
 
-public class CentreInteretDAO {
+import org.springframework.stereotype.Repository;
+
+import com.ninja_squad.geektic.modele.CentreInteret;
+
+@Repository
+public class CentreInteretDao {
 	
+	@PersistenceContext
 	private EntityManager entityManager;
 	
 	public CentreInteret findById(Long id) //retourne un centre d'interet
