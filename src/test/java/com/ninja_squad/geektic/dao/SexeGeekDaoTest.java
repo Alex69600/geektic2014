@@ -1,6 +1,9 @@
 package com.ninja_squad.geektic.dao;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
+
+import java.util.List;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -9,7 +12,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import com.ninja_squad.dbsetup.DbSetup;
 import com.ninja_squad.dbsetup.Operations;
 import com.ninja_squad.dbsetup.operation.Operation;
-import com.ninja_squad.geektic.modele.Geek;
 import com.ninja_squad.geektic.modele.SexeGeek;
 
 public class SexeGeekDaoTest extends BaseDaoTest{
@@ -42,5 +44,12 @@ public class SexeGeekDaoTest extends BaseDaoTest{
 	    {
 		  	SexeGeek s1 = SexeGeekDAOTest.findById(1L);
 			assertNotNull(s1);
+	    }
+	  
+	  @Test
+	    public void testFindByAll()
+	    {
+			List<SexeGeek> s2 = SexeGeekDAOTest.findByAll();
+			assertEquals(2,s2.size());
 	    }
 }

@@ -1,6 +1,9 @@
 package com.ninja_squad.geektic.dao;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
+
+import java.util.List;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -10,7 +13,6 @@ import com.ninja_squad.dbsetup.DbSetup;
 import com.ninja_squad.dbsetup.Operations;
 import com.ninja_squad.dbsetup.operation.Operation;
 import com.ninja_squad.geektic.modele.CentreInteret;
-import com.ninja_squad.geektic.modele.Geek;
 
 public class CentreInteretDaoTest extends BaseDaoTest{
 
@@ -42,5 +44,12 @@ public class CentreInteretDaoTest extends BaseDaoTest{
 	    {
 		  CentreInteret c1 = interetDAOTest.findById(1L);
 			assertNotNull(c1);
+	    }
+	  
+	  @Test
+	    public void testFindByAll()
+	    {
+			List<CentreInteret> c2 = interetDAOTest.findByAll();
+			assertEquals(5,c2.size());
 	    }
 }

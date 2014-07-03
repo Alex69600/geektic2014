@@ -16,7 +16,7 @@ public class GeekDao {
 	@PersistenceContext
 	private EntityManager entityManager;
 		
-	public List<Geek> findAll() // retourne tous les geeks
+	public List<Geek> findByAll() // retourne tous les geeks
 	{
 		String jpql = "select s from Geek as s ORDER BY Nom,Prenom"; 
 		TypedQuery<Geek> query = entityManager.createQuery(jpql, Geek.class); 
