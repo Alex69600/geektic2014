@@ -22,7 +22,7 @@ public class GeeksCritereService {
      private GeekDao geekDao;
      
      @RequestMapping(method = GET)
-     public List<Geek> afficheGeeks(@RequestParam String critere,@RequestParam String sexe){
+     public List<Geek> afficheGeeks(@RequestParam long critere,@RequestParam long sexe){
              List<Geek> listeGeeks = geekDao.findCritere(critere,sexe);
              return listeGeeks;
      }

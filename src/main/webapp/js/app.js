@@ -17,7 +17,7 @@ app.controller('RechercheCtrl', function($scope, $http) {
 	});
 	$scope.rechercher = function()
 	{
-		$http.get('/api/afficheGeeksCritere?critere='+$scope.interet.nomInteret+'&sexe='+$scope.sexe.sexeGeek).success(function(data) {
+		$http.get('/api/afficheGeeksCritere?critere='+$scope.interet.idInteret+'&sexe='+$scope.sexe.idSexeGeek).success(function(data) {
 			$scope.geeks = data;
 			$scope.geeksFound = data.length>0;
 		});

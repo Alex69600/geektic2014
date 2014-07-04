@@ -24,12 +24,12 @@ public class GeekDao {
 		return listeGeeks;
 	}
 	
-	public List<Geek> findCritere(String interet,String sexe ) // retourne les geeks correspondants aux critères
+	public List<Geek> findCritere(long interet,long sexe ) // retourne les geeks correspondants aux critères
 	{
 		String jpql = "select g from Geek as g"
 				+ " inner join g.centreInteret as i"
 				+ " inner join g.sexeGeek as s"
-                + " where  s.sexeGeek= :sexe and  i.nomInteret= :interet";
+                + " where  s.idSexeGeek= :sexe and  i.idInteret= :interet";
         TypedQuery<Geek> query = entityManager.createQuery(jpql, Geek.class);
         query.setParameter("sexe", sexe);
         query.setParameter("interet", interet);
