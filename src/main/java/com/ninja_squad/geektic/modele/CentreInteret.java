@@ -1,13 +1,10 @@
 package com.ninja_squad.geektic.modele;
 
-import java.util.Set;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
@@ -20,15 +17,7 @@ public class CentreInteret {
     private Long idInteret;
 	@Column(name = "NOMINTERET")
 	private String nomInteret;
-	@OneToMany(mappedBy = "centreInteret")
-	private Set<Geek> geek;
 	
-	public Set<Geek> getGeek() {
-		return geek;
-	}
-	public void setGeek(Set<Geek> geek) {
-		this.geek = geek;
-	}
 	public Long getIdInteret() {
 		return idInteret;
 	}

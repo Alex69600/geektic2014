@@ -15,7 +15,7 @@ import com.ninja_squad.geektic.modele.Geek;
 
 @RestController
 @Transactional
-@RequestMapping("/afficheGeeks")
+@RequestMapping("/api/afficheGeeks")
 public class GeekService {
         @Autowired
         private GeekDao geekDao;

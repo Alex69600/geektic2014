@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 
 <html ng-app="geektic">
-    <head>
-		<meta charset="utf-8">
-        <title>Geektic : le site de rencontre pour les geeks</title>
-        <script src="/js/angular.js"></script>
-        <script src="/js/angular-route.js"></script>
-        <script src="/js/app.js"></script>
-        <!-- Bootstrap -->
-        <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-    </head>
-    
-    <body ng-controller="HelloCtrl">
-         <div class="text-center"></div>
-	        <div ng-view></div>
-    </body>
+<head>
+<meta charset="utf-8">
+<title>Geektic : le site de rencontre pour les geeks</title>
+<script src="/js/angular.js"></script>
+<script src="/js/angular-route.js"></script>
+<script src="/js/app.js"></script>
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+</head>
+<body>
+	<a href="#/Recherche">rechercher</a> <a href="#/Main">Accueil</a>
+	<div ng-view>
+	</div>
+</body>
 </html>

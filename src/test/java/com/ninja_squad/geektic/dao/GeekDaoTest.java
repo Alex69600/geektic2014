@@ -64,7 +64,7 @@ public class GeekDaoTest extends BaseDaoTest{
 	    @Test
 	    public void testFindCritere()
 	    {
-			List<Geek> g2 = geekDAOTest.findCritere(2,1);
+			List<Geek> g2 = geekDAOTest.findCritere("J2EE","HOMME");
 			assertEquals(1,g2.size());
 	    }
 }

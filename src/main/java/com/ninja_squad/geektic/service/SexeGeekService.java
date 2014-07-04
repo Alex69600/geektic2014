@@ -15,7 +15,7 @@ import com.ninja_squad.geektic.dao.SexeGeekDao;
 
 @RestController
 @Transactional
-@RequestMapping("/afficheSexe")
+@RequestMapping("/api/afficheSexe")
 public class SexeGeekService {
 	@Autowired
     private SexeGeekDao SexeGeekDao;

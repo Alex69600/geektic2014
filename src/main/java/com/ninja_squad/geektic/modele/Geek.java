@@ -20,10 +20,10 @@ public class Geek {
 	private String courriel;
 	@Column(name = "GRAVATAR")
 	private String gravatar;
- 	@ManyToOne
+ 	@OneToOne
 	@JoinColumn(name = "NUMCENTREINTERET")
 	private CentreInteret centreInteret;
- 	@ManyToOne
+ 	@OneToOne
 	@JoinColumn(name = "NUMSEXE")
 	private SexeGeek sexeGeek;
  	

@@ -15,7 +15,7 @@ import com.ninja_squad.geektic.modele.CentreInteret;
 
 @RestController
 @Transactional
-@RequestMapping("/afficheCentreInteret")
+@RequestMapping("/api/afficheCentreInteret")
 public class CentreInteretService {
 	@Autowired
     private CentreInteretDao CentreInteretDao;

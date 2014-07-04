@@ -1,13 +1,11 @@
 package com.ninja_squad.geektic.modele;
 
-import java.util.Set;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
@@ -19,8 +17,7 @@ public class SexeGeek {
     private Long idSexeGeek;
 	@Column(name = "SEXEGEEK")
 	private String sexeGeek;
-	@OneToMany(mappedBy = "sexeGeek")
-	private Set<Geek> geek;
+	
 	
 	public Long getIdSexeGeek() {
 		return idSexeGeek;
@@ -34,10 +31,5 @@ public class SexeGeek {
 	public void setSexeGeek(String sexeGeek) {
 		this.sexeGeek = sexeGeek;
 	}
-	public Set<Geek> getGeek() {
-		return geek;
-	}
-	public void setGeek(Set<Geek> geek) {
-		this.geek = geek;
-	}
+	
 }
