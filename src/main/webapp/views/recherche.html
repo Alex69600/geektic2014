@@ -1,0 +1,13 @@
+<label>Sexe : </label> <select name="ListeSexe" ng-model="sexe" ng-options="sexe.sexeGeek for sexe in sexes"></select> <br/>
+<label>Interet : </label> <select name="ListeInteret" ng-model="interet" ng-options="centreinteret.nomInteret for centreinteret in centreinterets"></select> <br/>
+<INPUT type="submit" value="rechercher" ng-click="rechercher()">
+         <p ng-hide="geeksFound">Pas de r&eacute;sultat !</p>
+         <div ng-show="geeksFound">
+         <p><strong>R&eacute;sultat de la recherche :</strong></p>
+            <div ng-repeat="geek in geeks">
+               Geek : {{ geek.nom }} {{ geek.prenom }} <br /> Centre
+	d'int&eacute;r&ecirc;t : {{ geek.centreInteret.nomInteret }}<br />
+	Age: {{ geek.age }} <br />
+	sexe  : {{geek.sexeGeek.sexeGeek}}
+            </div>
+</div>
